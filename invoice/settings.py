@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 from pathlib import Path
 from os import getenv
 from dotenv import load_dotenv
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -85,18 +86,9 @@ DATABASES = {
     #     'ENGINE': 'django.db.backends.sqlite3',
     #     'NAME': BASE_DIR / 'db.sqlite3',
     # },
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'invoice_api',
-        'USER': 'invoice_api_owner',
-        'PASSWORD': 'tC04rQylKugD',
-        'HOST': 'ep-damp-lab-a2h4jx3q.eu-central-1.aws.neon.tech',
-        'PORT': getenv('PGPORT', 5432),
-        'OPTIONS': {
-          'sslmode': 'require',
-       }
-    }
+    'default': dj_database_url.parse('postgres://invoice_api_user:flsx4ObpjTYVo0gvXCVmb0NSdZYcqAHd@dpg-cp4hsjv79t8c73egp8og-a.frankfurt-postgres.render.com/invoice_api')
 }
+
 
 
 # Password validation
