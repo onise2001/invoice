@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django_filters',
     'corsheaders',
     'invoice_api',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
