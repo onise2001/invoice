@@ -88,7 +88,7 @@ DATABASES = {
     #     'ENGINE': 'django.db.backends.sqlite3',
     #     'NAME': BASE_DIR / 'db.sqlite3',
     # },
-    'default': dj_database_url.parse('postgres://invoice_api_user:flsx4ObpjTYVo0gvXCVmb0NSdZYcqAHd@dpg-cp4hsjv79t8c73egp8og-a.frankfurt-postgres.render.com/invoice_api')
+    'default': dj_database_url.parse('postgres://avnadmin:AVNS_otCx4MHhvl2ZzZNm-99@invoiceapi-invoiceapiteam1.k.aivencloud.com:28057/defaultdb?sslmode=require')
 }
 
 
