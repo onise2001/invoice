@@ -49,7 +49,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    "whitenoise.middleware.WhiteNoiseMiddleware",
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -88,7 +88,7 @@ DATABASES = {
     #     'ENGINE': 'django.db.backends.sqlite3',
     #     'NAME': BASE_DIR / 'db.sqlite3',
     # },
-    'default': dj_database_url.parse('postgres://avnadmin:AVNS_otCx4MHhvl2ZzZNm-99@invoiceapi-invoiceapiteam1.k.aivencloud.com:28057/defaultdb?sslmode=require')
+    'default': dj_database_url.parse('postgres://koyeb-adm:nmW54lCuPZga@ep-dark-dawn-a2em1jb2.eu-central-1.pg.koyeb.app/koyebdb')
 }
 
 
